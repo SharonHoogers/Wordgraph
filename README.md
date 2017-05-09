@@ -3,4 +3,4 @@ Word frequency graph
 
 # Illustrator sketch
 
-[graph](images/Schetsgrafiek.png)
+![graph](images/Schetsgrafiek.png)
