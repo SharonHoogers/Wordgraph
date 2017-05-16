@@ -1,0 +1,82 @@
+size(2550, 3450)
+background(1)
+
+import json
+
+with open('words.json') as infile:
+    words = json.load(infile)
+print len(words)
+# print freqData[0]
+
+# for word in freqData[:20]:
+# # [chr(i) for i in range(97, 123)]
+# words = word['spelling']
+
+margin = 100
+size = 50
+spacing = 40
+
+for x in range(27):
+    for y in range(37):
+        # calculate the position of the circle
+        xpos = margin + ((size + spacing) * x)
+        ypos = margin + ((size + spacing) * y)
+        
+        # get the word from the list
+        w = words[(y * 27) + x]
+        
+        # draw circle
+        fill(None)
+        stroke(255, 0, 0)
+        arc(xpos, ypos, size - 25)
+        
+        if w[" SUBTLEXWF"] > 100:
+            arc(xpos, ypos, size - 20)
+            
+        if w[" SUBTLEXWF"] > 500:
+            arc(xpos, ypos, size - 15)
+            
+        if w[" SUBTLEXWF"] > 1000:
+            arc(xpos, ypos, size - 10)
+            
+        if w[" SUBTLEXWF"] > 1500:
+            arc(xpos, ypos, size - 5)
+            
+        if w[" SUBTLEXWF"] > 2000:
+            arc(xpos, ypos, size - 0)
+            
+        if w[" SUBTLEXWF"] > 2500:
+            arc(xpos, ypos, size + 5)
+            
+        if w[" SUBTLEXWF"] > 3000:
+            arc(xpos, ypos, size + 10)
+            
+        if w[" SUBTLEXWF"] > 3500:
+            arc(xpos, ypos, size + 15)
+            
+        if w[" SUBTLEXWF"] > 4000:
+            arc(xpos, ypos, size + 20)
+            
+        if w[" SUBTLEXWF"] > 4500:
+            arc(xpos, ypos, size + 25)
+            
+        if w[" SUBTLEXWF"] > 5000:
+            arc(xpos, ypos, size + 30)
+            
+        if w[" SUBTLEXWF"] > 5500:
+            arc(xpos, ypos, size + 35)
+            
+        if w[" SUBTLEXWF"] > 6000:
+            arc(xpos, ypos, size + 40)
+        
+        stroke(0, 0, 255)
+        
+        if w[" SUBTLEXWF"] > 10000:
+            arc(xpos, ypos, size + 45)
+        
+        # draw text
+        fill(0)
+        stroke(None)
+        text(w["spelling"], xpos, ypos + 4, align=CENTER, size=8)
+        
+        
