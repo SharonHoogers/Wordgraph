@@ -1,4 +1,4 @@
-size(2550, 3450)
+size(2650, 3550)
 background(1)
 
 import json
@@ -11,8 +11,11 @@ print len(words)
 # for word in freqData[:20]:
 # # [chr(i) for i in range(97, 123)]
 # words = word['spelling']
+from operator import itemgetter
+newlist = sorted(words, key=itemgetter(' nchar'))
 
-margin = 100
+
+margin = 160
 size = 50
 spacing = 40
 
@@ -23,7 +26,8 @@ for x in range(27):
         ypos = margin + ((size + spacing) * y)
         
         # get the word from the list
-        w = words[(y * 27) + x]
+        # w = words[(y * 27) + x]
+        w = newlist[(y * 27) + x]
         
         # draw circle
         fill(None)
@@ -69,14 +73,41 @@ for x in range(27):
         if w[" SUBTLEXWF"] > 6000:
             arc(xpos, ypos, size + 40)
         
-        stroke(0, 0, 255)
-        
-        if w[" SUBTLEXWF"] > 10000:
+        if w[" SUBTLEXWF"] > 6500:
             arc(xpos, ypos, size + 45)
+            
+        if w[" SUBTLEXWF"] > 7000:
+            arc(xpos, ypos, size + 50)
+            
+        if w[" SUBTLEXWF"] > 7500:
+            arc(xpos, ypos, size + 55)
+            
+        if w[" SUBTLEXWF"] > 8000:
+            arc(xpos, ypos, size + 60)
+            
+        if w[" SUBTLEXWF"] > 8500:
+            arc(xpos, ypos, size + 65)
+            
+        if w[" SUBTLEXWF"] > 9000:
+            arc(xpos, ypos, size + 70)
+            
+        if w[" SUBTLEXWF"] > 9500:
+            arc(xpos, ypos, size + 75)
+            
+        stroke(0, 0, 255)
+            
+        if w[" SUBTLEXWF"] > 10000:
+            arc(xpos, ypos, size + 80)
+        
+        if w[" SUBTLEXWF"] > 20000:
+            arc(xpos, ypos, size + 85)
+            
+        if w[" SUBTLEXWF"] > 30000:
+            arc(xpos, ypos, size + 90)
         
         # draw text
         fill(0)
         stroke(None)
-        text(w["spelling"], xpos, ypos + 4, align=CENTER, size=8)
+        text(w["spelling"], xpos, ypos + 4, align=CENTER, size=8, font="Helvetica")
         
         

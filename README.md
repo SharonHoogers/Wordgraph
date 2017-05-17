@@ -16,3 +16,5 @@ Python Graph
 - Word order is now from biggest frequency to smallest -> has to change to smallest word/longest word
 
 --> Sketch_01.pv
+
+![graph](images/Sketch_01.png)
