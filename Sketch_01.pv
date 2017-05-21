@@ -1,5 +1,6 @@
 size(2650, 3550)
-background(1)
+background ('aliceblue')
+
 
 import json
 
