@@ -18,3 +18,5 @@ Python Graph
 --> Sketch_01.pv
 
 ![graph](images/Sketch_01.png)
+
+![graph](images/Graph.png)
