@@ -1,4 +1,4 @@
-size(2650, 3550)
+size(2700, 3650)
 background ('ghostwhite')
 
 
@@ -17,7 +17,7 @@ from operator import itemgetter
 newlist = sorted(words, key=itemgetter(' nchar'))
 
 
-margin = 160
+margin = 190
 size = 25
 spacing = 65
 
@@ -100,48 +100,48 @@ for x in range(27):
             arc(xpos, ypos, size + 45)
             
         if w[" SUBTLEXWF"] > 4500:
-            arc(xpos, ypos, size + 25)
-            
-        if w[" SUBTLEXWF"] > 5000:
-            arc(xpos, ypos, size + 30)
-            
-        if w[" SUBTLEXWF"] > 5500:
-            arc(xpos, ypos, size + 35)
-            
-        if w[" SUBTLEXWF"] > 6000:
-            arc(xpos, ypos, size + 40)
-        
-        if w[" SUBTLEXWF"] > 6500:
-            arc(xpos, ypos, size + 45)
-            
-        if w[" SUBTLEXWF"] > 7000:
             arc(xpos, ypos, size + 50)
             
-        if w[" SUBTLEXWF"] > 7500:
+        if w[" SUBTLEXWF"] > 5000:
             arc(xpos, ypos, size + 55)
             
-        if w[" SUBTLEXWF"] > 8000:
+        if w[" SUBTLEXWF"] > 5500:
             arc(xpos, ypos, size + 60)
             
-        if w[" SUBTLEXWF"] > 8500:
+        if w[" SUBTLEXWF"] > 6000:
             arc(xpos, ypos, size + 65)
-            
-        if w[" SUBTLEXWF"] > 9000:
+        
+        if w[" SUBTLEXWF"] > 6500:
             arc(xpos, ypos, size + 70)
             
-        if w[" SUBTLEXWF"] > 9500:
+        if w[" SUBTLEXWF"] > 7000:
             arc(xpos, ypos, size + 75)
+            
+        if w[" SUBTLEXWF"] > 7500:
+            arc(xpos, ypos, size + 80)
+            
+        if w[" SUBTLEXWF"] > 8000:
+            arc(xpos, ypos, size + 85)
+            
+        if w[" SUBTLEXWF"] > 8500:
+            arc(xpos, ypos, size + 90)
+            
+        if w[" SUBTLEXWF"] > 9000:
+            arc(xpos, ypos, size + 95)
+            
+        if w[" SUBTLEXWF"] > 9500:
+            arc(xpos, ypos, size + 100)
             
         # stroke(0, 0, 255)
             
         if w[" SUBTLEXWF"] > 10000:
-            arc(xpos, ypos, size + 80)
+            arc(xpos, ypos, size + 105)
         
         if w[" SUBTLEXWF"] > 20000:
-            arc(xpos, ypos, size + 100)
+            arc(xpos, ypos, size + 125)
             
         if w[" SUBTLEXWF"] > 30000:
-            arc(xpos, ypos, size + 120)
+            arc(xpos, ypos, size + 145)
             
             
         
